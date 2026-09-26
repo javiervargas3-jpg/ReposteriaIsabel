@@ -5,7 +5,7 @@ const PHONE = "56987729703";
   }
 
   // ---- Product data ----
-  const productImageFolder = "../Pagina%20Resposteria%20Isabel/";
+  const productImageFolder = "assets/";
   const products = [
     {id:"torta_comunion", cat:"Tortas", tag:"Torta", title:"Torta Primera Comunión", desc:"Bizcocho relleno a elección, decorada con guirnalda dorada y el nombre de quien celebra.", img:"torta_comunion.png"},
     {id:"torta_tiramisu", cat:"Tortas", tag:"Torta", title:"Torta Tiramisú", desc:"Capas de bizcocho embebido en café, crema mascarpone y cacao espolvoreado.", img:"torta_tiramisu.png"},

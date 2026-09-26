@@ -24,7 +24,7 @@ reposteria-isabel/
 - **Número de WhatsApp**: cambia la constante `PHONE` al inicio de `js/script.js`.
 - **Productos**: edita el arreglo `products` en `js/script.js` (título, descripción, nombre de imagen y categoría).
 - **Colores y tipografía**: variables `:root` al inicio de `css/style.css`.
-- **Fotos del catálogo**: guarda cada archivo PNG directamente en `../Pagina Resposteria Isabel/`, la carpeta hermana de `site`, usando exactamente los nombres siguientes. No hace falta modificar HTML ni JavaScript para cambiar las fotos:
+- **Fotos del catálogo**: guarda cada archivo PNG dentro de `assets/`, usando exactamente los nombres siguientes. No hace falta modificar HTML ni JavaScript para cambiar las fotos:
    - `torta_comunion.png`
    - `torta_tiramisu.png`
    - `torta_figura.png`
