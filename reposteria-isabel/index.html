@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Repostería Isabel: tortas personalizadas, alfajores rellenos y dulces chilenos artesanales en Peñalolén, Santiago. Cotiza tu pedido por WhatsApp.">
+<meta name="theme-color" content="#FBF1E6">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="Repostería Isabel — Tortas y Dulces Artesanales">
+<meta property="og:description" content="Tortas personalizadas, alfajores rellenos y dulces chilenos hechos a mano en Peñalolén. Cotiza por WhatsApp.">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <title>Repostería Isabel — Tortas y Dulces Artesanales</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +18,7 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- ===== NAV ===== -->
 <header class="site">
@@ -21,7 +30,7 @@
         <div class="brand-tag">hecho con amor ♡</div>
       </div>
     </div>
-    <nav class="links">
+    <nav class="links" id="mainNav" aria-label="Principal">
       <a href="#menu">Menú</a>
       <a href="#personalizado">Diseños</a>
       <a href="#nosotros">Nosotros</a>
@@ -32,15 +41,16 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6M10 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
         <span>Carrito</span><b class="cart-count" id="cartCount">0</b>
       </button>
-      <a class="btn btn-primary btn-sm" id="navWaBtn" target="_blank" rel="noopener">
+      <a class="btn btn-primary btn-sm" id="navWaBtn" href="https://wa.me/56981729703" target="_blank" rel="noopener noreferrer">
         <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.5.7 4.8 1.9 6.8L3 29l6.9-2.2c1.9 1 4.1 1.6 6.1 1.6 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm0 22.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.1 1.3 1.3-4-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.8 0-5.8 4.7-10.5 10.6-10.5S26.6 9.7 26.6 15.5 21.9 25.7 16 25.7zm5.8-7.9c-.3-.2-1.9-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5.3-.4c.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2-.4-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.5 3.5 0 0 0-1.1 2.6c0 1.5 1.1 3 1.3 3.2s2.2 3.4 5.3 4.7a6 6 0 0 0 3.7.7 3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.2-.6-.4z"/></svg>
         Escríbenos
       </a>
-      <button class="burger" id="burgerBtn" aria-label="Menú">☰</button>
+      <button class="burger" id="burgerBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">☰</button>
     </div>
   </div>
 </header>
 
+<main id="contenido">
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="wrap">
@@ -116,18 +126,21 @@
   <div class="custom-stamp">
     <h2>✨ Pide tu diseño personalizado ✨</h2>
     <p>¿Tienes una idea en mente? Cuéntanos el tema, colores y para quién es, y te preparamos una torta o dulce único para tu celebración.</p>
-    <a href="#" class="btn btn-primary pulse-btn" id="customWaBtn" target="_blank" rel="noopener">
+    <a href="https://wa.me/56981729703" class="btn btn-primary pulse-btn" id="customWaBtn" target="_blank" rel="noopener noreferrer">
       <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.5.7 4.8 1.9 6.8L3 29l6.9-2.2c1.9 1 4.1 1.6 6.1 1.6 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm0 22.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.1 1.3 1.3-4-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.8 0-5.8 4.7-10.5 10.6-10.5S26.6 9.7 26.6 15.5 21.9 25.7 16 25.7zm5.8-7.9c-.3-.2-1.9-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5.3-.4c.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2-.4-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.5 3.5 0 0 0-1.1 2.6c0 1.5 1.1 3 1.3 3.2s2.2 3.4 5.3 4.7a6 6 0 0 0 3.7.7 3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.2-.6-.4z"/></svg>
       Cotizar mi diseño
     </a>
   </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
+<!-- ===== TESTIMONIALS =====
+     IMPORTANTE (Ley 19.496, publicidad veraz): los testimonios y las cifras del hero
+     (352+ pedidos, 337 clientes) deben ser reales y verificables. Confirmar con la
+     dueña antes de publicar; si no lo son, eliminar la sección o reemplazarlos. -->
 <section class="band" id="nosotros">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow" style="color:var(--gold)">lo que dicen de nosotros</div>
+      <div class="eyebrow eyebrow-gold">lo que dicen de nosotros</div>
       <h2>Cada torta cuenta una historia</h2>
       <p>Familias de Peñalolén y alrededores confían en Repostería Isabel para sus cumpleaños, comuniones y celebraciones especiales.</p>
     </div>
@@ -151,6 +164,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- ===== FOOTER ===== -->
 <footer id="contacto">
   <div class="wrap">
@@ -162,8 +177,8 @@
         </div>
         <p class="desc">Tortas y dulces artesanales hechos con amor. Endulzamos tus momentos más importantes, un pedido a la vez.</p>
         <div class="social-row">
-          <a href="https://instagram.com/reposteria_isabel" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-          <a href="#" id="footerWaBtn" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+          <a href="https://instagram.com/reposteria_isabel" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://wa.me/56981729703" id="footerWaBtn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WA</a>
         </div>
       </div>
       <div class="footer-col">
@@ -171,23 +186,26 @@
         <a href="#menu">Menú completo</a>
         <a href="#personalizado">Diseños personalizados</a>
         <a href="#nosotros">Opiniones</a>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="terminos.html">Términos y condiciones</a>
       </div>
       <div class="footer-col">
         <h4>Contacto</h4>
-        <a href="#" id="footerWaText">WhatsApp: +56 9 8772 9703</a>
-        <a href="https://instagram.com/reposteria_isabel" target="_blank" rel="noopener">@reposteria_isabel</a>
+        <a href="https://wa.me/56981729703" id="footerWaText" target="_blank" rel="noopener noreferrer">WhatsApp: +56 9 8172 9703</a>
+        <a href="https://instagram.com/reposteria_isabel" target="_blank" rel="noopener noreferrer">@reposteria_isabel</a>
         <a>Peñalolén, Santiago</a>
         <a>Pedidos con anticipación</a>
       </div>
     </div>
+    <p class="legal-note">Las imágenes son referenciales; cada producto es artesanal y puede variar levemente. Los nombres de marcas de terceros mencionados describen solo el sabor o la inspiración de cada producto; pertenecen a sus respectivos titulares y Repostería Isabel no está afiliada, asociada ni patrocinada por ellos. Informa tus alergias al pedir: nuestros productos pueden contener o haber estado en contacto con gluten, huevo, leche, frutos secos y soya.</p>
     <div class="footer-bottom">
       <span>© 2026 Repostería Isabel — Todos los derechos reservados.</span>
-      <span>Hecho con <span class="script" style="font-size:1rem;color:var(--rose-dark);">amor</span> para endulzar tu día ♡</span>
+      <span>Hecho con <span class="script footer-script">amor</span> para endulzar tu día ♡</span>
     </div>
   </div>
 </footer>
 
-<a href="#" class="float-wa" id="floatWaBtn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+<a href="https://wa.me/56981729703" class="float-wa" id="floatWaBtn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
   <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.5.7 4.8 1.9 6.8L3 29l6.9-2.2c1.9 1 4.1 1.6 6.1 1.6 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm0 22.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.1 1.3 1.3-4-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.8 0-5.8 4.7-10.5 10.6-10.5S26.6 9.7 26.6 15.5 21.9 25.7 16 25.7zm5.8-7.9c-.3-.2-1.9-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5.3-.4c.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2-.4-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.5 3.5 0 0 0-1.1 2.6c0 1.5 1.1 3 1.3 3.2s2.2 3.4 5.3 4.7a6 6 0 0 0 3.7.7 3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.2-.6-.4z"/></svg>
 </a>
 
@@ -209,6 +227,6 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="js/script.js"></script>
+<script src="js/script.js" defer></script>
 </body>
 </html>
