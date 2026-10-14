@@ -1,12 +1,12 @@
 # Checklist de entrega — Repostería Isabel (para quien vende el sitio)
 
 ## 1. Antes de publicar (bloqueantes)
-- [ ] Copiar la carpeta `assets/` junto a `index.html` con estos archivos: `logo.png`, `hero_brand.jpg` y las 21 imágenes de productos (los nombres están en `js/script.js`, campo `img`).
-- [ ] Completar los datos legales marcados en amarillo. Buscarlos con: `grep -rn "COMPLETAR" .`
+- [+ ] Copiar la carpeta `assets/` junto a `index.html` con estos archivos: `logo.png`, `hero_brand.jpg` y las 21 imágenes de productos (los nombres están en `js/script.js`, campo `img`).
+- [ +] Completar los datos legales marcados en amarillo. Buscarlos con: `grep -rn "COMPLETAR" .`
       Datos: nombre/razón social, RUT, domicilio, correo, medios de pago, zonas de entrega/retiro, plazo mínimo de pedido, plazo de cancelación.
-- [ ] Confirmar con la dueña que **los testimonios y las cifras (352+ pedidos, 337 clientes) son reales y verificables**. Si no, eliminarlos (publicidad engañosa, Ley 19.496).
-- [ ] Confirmar que está de acuerdo con el uso de nombres de marcas (Oreo, Orly, Bon o Bon, Tritón) en los productos; el sitio incluye aviso de no afiliación.
-- [ ] Probar en celular real: agregar al carrito, abrir WhatsApp, menú móvil.
+- [ +] Confirmar con la dueña que **los testimonios y las cifras (352+ pedidos, 337 clientes) son reales y verificables**. Si no, eliminarlos (publicidad engañosa, Ley 19.496).
+- [ +] Confirmar que está de acuerdo con el uso de nombres de marcas (Oreo, Orly, Bon o Bon, Tritón) en los productos; el sitio incluye aviso de no afiliación.
+- [ +] Probar en celular real: agregar al carrito, abrir WhatsApp, menú móvil.
 
 ## 2. Publicación en Vercel
 - [ ] Subir la carpeta completa (con `vercel.json`) a un repositorio de GitHub y conectarlo a Vercel, o usar `vercel --prod`.
